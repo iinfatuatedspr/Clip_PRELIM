@@ -1,0 +1,87 @@
+{
+  "adjective": [
+    [
+      "a photo of a concrete surface with a slight crack.",
+      "a photo of a concrete surface with a minor crack.",
+      "a photo of a concrete surface with a small crack."
+    ],
+    [
+      "a photo of a concrete surface with a moderate crack.",
+      "a photo of a concrete surface with a medium crack.",
+      "a photo of a concrete surface with a noticeable crack."
+    ],
+    [
+      "a photo of a concrete surface with a severe crack.",
+      "a photo of a concrete surface with a major crack.",
+      "a photo of a concrete surface with a serious crack."
+    ]
+  ],
+  "width": [
+    [
+      "a photo of a concrete surface with a hairline crack.",
+      "a photo of a concrete surface with a very fine crack.",
+      "a photo of a concrete surface with a very thin crack."
+    ],
+    [
+      "a photo of a concrete surface with a crack of medium width.",
+      "a photo of a concrete surface with a moderately wide crack.",
+      "a photo of a concrete surface with a clearly open crack."
+    ],
+    [
+      "a photo of a concrete surface with a wide crack.",
+      "a photo of a concrete surface with a very wide crack.",
+      "a photo of a concrete surface with a wide open crack."
+    ]
+  ],
+  "extent": [
+    [
+      "a photo of a concrete surface with a single short crack.",
+      "a photo of a concrete surface with one isolated crack.",
+      "a photo of a concrete surface with a short crack line."
+    ],
+    [
+      "a photo of a concrete surface with several cracks.",
+      "a photo of a concrete surface with a few intersecting cracks.",
+      "a photo of a concrete surface with multiple crack lines."
+    ],
+    [
+      "a photo of a concrete surface with a dense network of cracks.",
+      "a photo of a concrete surface with map cracking over the whole surface.",
+      "a photo of a concrete surface with cracks in a grid pattern everywhere."
+    ]
+  ],
+  "manual": [
+    [
+      "a photo of a concrete surface with a few hairline cracks spaced far apart.",
+      "a photo of a concrete surface with a single very thin crack.",
+      "a photo of a concrete surface with sparse fine cracks with wide gaps between them."
+    ],
+    [
+      "a photo of a concrete surface with thin cracks spaced close together.",
+      "a photo of a concrete surface with a few clearly visible cracks of medium width.",
+      "a photo of a concrete surface with several moderately open cracks."
+    ],
+    [
+      "a photo of a concrete surface with many wide open cracks close together.",
+      "a photo of a concrete surface with a dense pattern of wide cracks.",
+      "a photo of a concrete surface with wide gaping cracks spaced tightly across the surface."
+    ]
+  ],
+  "random_control": [
+    [
+      "a photo of a concrete surface with a nails crack.",
+      "a photo of a concrete surface with a corey crack.",
+      "a photo of a concrete surface with a wait crack."
+    ],
+    [
+      "a photo of a concrete surface with a stanley crack.",
+      "a photo of a concrete surface with a leaks crack.",
+      "a photo of a concrete surface with a ninja crack."
+    ],
+    [
+      "a photo of a concrete surface with a biggest crack.",
+      "a photo of a concrete surface with a families crack.",
+      "a photo of a concrete surface with a zelda crack."
+    ]
+  ]
+}

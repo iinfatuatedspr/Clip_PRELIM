@@ -1,0 +1,12 @@
+# Colab 已自带 torch / torchvision，不要重装。本地环境请先按 https://pytorch.org 安装对应 CUDA 版本的 torch。
+open_clip_torch>=2.24
+ftfy
+regex
+pyyaml
+scikit-learn
+scikit-image
+scipy
+pandas
+matplotlib
+tqdm
+pillow

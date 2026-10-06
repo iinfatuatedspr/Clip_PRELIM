@@ -1,0 +1,323 @@
+# ===========================================================================
+# prompts.yaml —— 定稿版（2026-09-28）
+# 依据：橋梁定期点検要領（令和6年7月）。每条 attr 的 source 都对应实际阅读过的页面。
+#
+# 规则（务必遵守，否则实验结论不成立）：
+#   1. 在 test 集上跑出结果之后，不得再根据结果修改本文件并重跑。
+#      如确有 bug 需要修改，必须在 meta.change_log 里记录修改内容和原因。
+#   2. 修改任何一条描述之前，先想清楚能否在面试中解释它的出处。
+# ===========================================================================
+
+meta:
+  author: "（申请者姓名）"
+  inspection_manual: "橋梁定期点検要領（令和6年7月, 国土交通省道路局国道・技術課, 版次20250314）"
+  term_translation_system: "按字面逐字直译，不替换为英语领域惯用术语（ひびわれ=cracking, 剥離=peeling, 鉄筋露出=iron bar exposure, 遊離石灰=free lime, 錆汁=rust juice）；由 Claude 按此规则生成, 2026-09-28"
+  llm_for_paraphrase: "Claude Opus 5.5, 2026-09-28；严格按 llm_paraphrase_prompt.md 的要求生成（12条: 短4/中4/长4, 遵守禁用词），未挑选、未润色"
+  change_log: []
+
+# ---- 包装模板 --------------------------------------------------------------
+templates:
+  - "a photo of {} on a concrete surface."
+  - "a close-up photo of {} on concrete."
+  - "an inspection photo of {} on a concrete bridge."
+  - "a photo of {} on a concrete wall."
+  - "a cropped photo of {} on a concrete structure."
+  - "a bright photo of {} on concrete."
+  - "a dark photo of {} on concrete."
+  - "a blurry photo of {} on concrete."
+  - "a photo showing {} on the underside of a concrete bridge."
+  - "a detailed photo of {} on a concrete surface."
+
+desc_template: "a photo of a concrete surface with {}."
+label_desc_template: "a photo of {label} on a concrete surface, which has {desc}."
+
+# ---- 正常状态（所有条件共用；不用否定词） --------------------------------------
+normal:
+  basic:
+    - "a photo of a clean concrete surface."
+    - "a photo of an intact concrete wall."
+    - "a photo of smooth concrete."
+    - "a close-up photo of sound concrete."
+    - "a photo of plain grey concrete."
+    - "a photo of concrete in good condition."
+    - "a photo of a uniform concrete texture."
+    - "a photo of a well-maintained concrete structure."
+    - "a photo of a normal concrete bridge surface."
+    - "a photo of a solid concrete slab."
+  # hard negatives：看起来像损伤、但不属于 CODEBRIM 五类损伤的东西。
+  # 注意与要領的分类并不完全一致：要領把"特異な変色"算作⑲変色・劣化，
+  # 把表面流水造成的析出物算作⑰その他（不是遊離石灰）。
+  extended:
+    dirt_stain:
+      - "a photo of a concrete surface with dark dirt stains."
+      - "a photo of a concrete surface with dust and grime."
+      - "a photo of a concrete surface with patchy dirt marks."
+    formwork_joint:
+      - "a photo of a concrete surface with straight formwork joint lines."
+      - "a photo of a concrete surface with round form tie holes."
+      - "a photo of a concrete surface with a construction joint."
+    shadow:
+      - "a photo of a concrete surface with a dark shadow."
+      - "a photo of a concrete surface with shadows of a railing."
+      - "a photo of a concrete surface in partial shade."
+    surface_pores:
+      - "a photo of a concrete surface with small air bubble holes."
+      - "a photo of a concrete surface with a rough porous texture."
+      - "a photo of a concrete surface with tiny surface voids."
+    paint_marking:
+      - "a photo of a concrete surface with painted inspection markings."
+      - "a photo of a concrete surface with graffiti."
+      - "a photo of a concrete surface with chalk lines."
+
+# ---- 五种损伤 --------------------------------------------------------------
+# 页码写法：「付録-3 p.xx」为要領内页码；括号内 PDF p. 为 yobo7_16.pdf 的页码。
+classes:
+  crack:
+    codebrim_tag: Crack
+    jp_term: "ひびわれ"
+    manual_ref: "付録-3 損傷程度の評価要領 ⑥ひびわれ pp.22-32（PDF p.292-302）；照片：参考資料2 ひびわれ（PDF p.383-388）"
+    label: "a crack"
+    term_literal: "cracking"
+    attr:
+      - text: "a thin dark line running straight across the surface"
+        source: "付録-3 p.22 一般的性状（PDF p.292）；p.24 パターン①鉛直ひびわれ（PDF p.294）"
+      - text: "a thin jagged line that wanders irregularly"
+        source: "参考資料2 ひびわれ 6/6 写真（PDF p.388）"
+      - text: "a fine black line contrasting with the pale grey surface"
+        source: "付録-3 p.22 一般的性状（PDF p.292）；参考資料2 写真（PDF p.383）"
+      - text: "a dark hairline mark that stands out against the lighter background"
+        source: "付録-3 p.22 最大ひびわれ幅「小」（PDF p.292）"
+      - text: "a narrow sharp-edged opening that splits the surface into two parts"
+        source: "付録-3 p.22 最大ひびわれ幅「大」（PDF p.292）"
+      - text: "a slightly open line with crumbled edges"
+        source: "参考資料2 ひびわれ 写真（PDF p.384-386）"
+      - text: "a web of thin lines forming irregular polygons like a turtle shell"
+        source: "付録-3 p.26 パターン⑨亀甲状・くもの巣状（PDF p.296）"
+      - text: "several parallel vertical lines at regular intervals"
+        source: "付録-3 p.26 パターン⑩規則的な間隔で鉛直方向（PDF p.296）"
+      - text: "thin lines running diagonally at about 45 degrees"
+        source: "付録-3 p.25 パターン④斜め, p.26 パターン⑫斜め45°（PDF p.295-296）"
+      - text: "thin lines spreading in many directions over a pillar"
+        source: "参考資料2 ひびわれ 6/6 多方向に拡がるひびわれ（PDF p.388）"
+    llm:
+      - "a thin dark line"
+      - "a zigzag dark hairline"
+      - "a web of fine lines"
+      - "a narrow black split"
+      - "a long thin dark line running straight down the wall"
+      - "fine lines branching out like the veins of a leaf"
+      - "a narrow gap separating the surface into two uneven halves"
+      - "several thin parallel lines spaced evenly across the grey surface"
+      - "a network of thin dark lines forming irregular polygons, like the pattern on a turtle shell"
+      - "a slightly open dark line that runs diagonally across the grey surface at a sharp angle"
+      - "thin wavy lines spreading in several directions from one spot, with a little dirt settled inside"
+      - "a sharp narrow dark gap running along the underside of a beam from one side to the other"
+
+  spallation:
+    codebrim_tag: Spallation
+    jp_term: "剥離"
+    manual_ref: "付録-3 ⑦剥離・鉄筋露出 p.33（PDF p.303）中「剥離」的定义与区分c；照片：参考資料2 うき・剥離・鉄筋露出（PDF p.405）"
+    label: "spalling"
+    term_literal: "peeling"
+    attr:
+      - text: "a shallow hollow where the surface layer has broken away"
+        source: "付録-3 p.33 一般的性状「表面が剥離している状態」（PDF p.303）"
+      - text: "a missing chunk along the corner edge of a beam"
+        source: "参考資料2 うき・剥離・鉄筋露出 写真1-2（PDF p.405）"
+      - text: "a freshly exposed patch of a different tone from the weathered surface around it"
+        source: "参考資料2 写真（PDF p.405）"
+      - text: "a paler rough area surrounded by darker, older surface"
+        source: "参考資料2 写真3（PDF p.405）"
+      - text: "a rough pitted area exposing coarse stones and gravel"
+        source: "付録-3 p.33 区分c「剥離のみが生じている」（PDF p.303）"
+      - text: "a crumbling area with loose fragments at its rim"
+        source: "参考資料2 備考・写真（PDF p.405）；参考資料4 かぶりコンクリートの浮き・剥離（PDF p.510）"
+      - text: "an irregular broken area with sharp uneven edges"
+        source: "参考資料2 写真（PDF p.405）"
+      - text: "a long strip of broken surface running along an edge"
+        source: "参考資料2 写真1-2（PDF p.405）"
+      - text: "a broken-away area on the underside of a slab or beam"
+        source: "付録-3 p.33 他の損傷との関係（床版）（PDF p.303）；参考資料2 写真（PDF p.405）"
+      - text: "a broken-away area next to a thin line on the surface"
+        source: "参考資料2 一般的性状「ひびわれを伴う場合」（PDF p.405）"
+    llm:
+      - "a shallow broken hollow"
+      - "a chipped-away rough patch"
+      - "a missing piece of surface"
+      - "a jagged shallow crater"
+      - "a rough dented area where the outer layer fell off"
+      - "an uneven hole showing small stones and gravel inside"
+      - "a broken corner with sharp irregular edges along the beam"
+      - "a pale rough scar surrounded by darker weathered surface"
+      - "a wide shallow pit with crumbly edges, exposing coarse grey stones beneath the smooth outer skin"
+      - "a long strip along the bottom edge of a beam where chunks have broken away"
+      - "an irregular dented patch on the underside of a slab, rougher and lighter than its surroundings"
+      - "a broken-away area next to a thin dark line, with loose fragments still hanging at its rim"
+
+  efflorescence:
+    codebrim_tag: Efflorescence
+    jp_term: "遊離石灰"
+    manual_ref: "付録-3 ⑧漏水・遊離石灰 p.34（PDF p.304）；照片：参考資料2 漏水・遊離石灰（PDF p.406-407）；参考資料4 床版間詰め部（PDF p.513）"
+    label: "efflorescence"
+    term_literal: "free lime"
+    attr:
+      - text: "white streaks running downward from a joint"
+        source: "付録-3 p.34 一般的性状「打継目…から石灰分の滲出」（PDF p.304）；参考資料2 写真（PDF p.406）"
+      - text: "small white icicle-like drips hanging from the underside"
+        source: "付録-3 p.34 区分e「つらら状」（PDF p.304）；参考資料4（PDF p.513）"
+      - text: "chalky white deposits on the grey surface"
+        source: "付録-3 p.34 区分d「ひびわれから遊離石灰が生じている」（PDF p.304）"
+      - text: "a muddy off-white residue mixed with water marks"
+        source: "付録-3 p.34 区分e「漏水に著しい泥…の混入」（PDF p.304）"
+      - text: "a crusty powdery white coating"
+        source: "参考資料2 漏水・遊離石灰 写真（PDF p.406）"
+      - text: "a damp glossy film with white residue at its edges"
+        source: "付録-3 p.34 区分c「ひびわれから漏水が生じている」（PDF p.304）"
+      - text: "white lines tracing the seams between slabs"
+        source: "参考資料4 床版間詰め部の遊離石灰 写真（PDF p.513）"
+      - text: "white residue spreading out along a thin line on the surface"
+        source: "付録-3 p.34 区分d（PDF p.304）"
+      - text: "white deposits on the underside of a deck slab"
+        source: "参考資料2 写真（PDF p.406）；参考資料4（PDF p.513）"
+      - text: "damp dark patches with white residue seeping out"
+        source: "付録-3 p.34 一般的性状「水や石灰分の滲出や漏出」（PDF p.304）"
+    llm:
+      - "white chalky streaks"
+      - "a crusty white residue"
+      - "white icicle-like drips"
+      - "white powdery stains"
+      - "white streaks running down from a joint like dripping wax"
+      - "a chalky white crust spreading along a thin line"
+      - "damp dark patches edged with a white powdery residue"
+      - "white lines tracing the seams between slabs on the underside"
+      - "small white stalactite-like drips hanging from the underside of a slab where water has seeped through"
+      - "a crusty yellowish-white layer mixed with muddy water marks, spreading downward from a gap"
+      - "long white chalky trails running in straight lines along the seams of a bridge deck underside"
+      - "a wet glossy area with white residue oozing out of a narrow line and collecting at its edges"
+
+  exposed_bars:
+    codebrim_tag: ExposedBars
+    jp_term: "鉄筋露出"
+    manual_ref: "付録-3 ⑦剥離・鉄筋露出 p.33（PDF p.303）中「鉄筋露出」的定义与区分d/e；照片：参考資料2（PDF p.405）；参考資料4（PDF p.510）"
+    label: "exposed reinforcement bars"
+    term_literal: "iron bar exposure"
+    attr:
+      - text: "long thin metal rods visible inside a broken-away area"
+        source: "付録-3 p.33 一般的性状「剥離部で鉄筋が露出」（PDF p.303）"
+      - text: "straight parallel rods lying bare along the bottom edge of a beam"
+        source: "参考資料2 写真1-2（PDF p.405）"
+      - text: "reddish-brown rusty rods set in grey surroundings"
+        source: "付録-3 p.33 区分d「鉄筋の腐食は軽微」（PDF p.303）"
+      - text: "a dark orange rust coating on bare steel rods"
+        source: "付録-3 p.33 区分e「著しく腐食」（PDF p.303）；参考資料4 写真（PDF p.510）"
+      - text: "ribbed steel rods with flaky scale on their surface"
+        source: "参考資料4 鉄筋の著しい腐食 写真（PDF p.510）"
+      - text: "thinned eaten-away steel rods with a scaly surface"
+        source: "付録-3 p.33 区分e「著しく腐食」（PDF p.303）"
+      - text: "a grid of crossing steel rods showing through a hollow"
+        source: "付録-3 p.33 一般的性状（PDF p.303）；参考資料2 写真（PDF p.405）"
+      - text: "a snapped steel rod end sticking out of the surface"
+        source: "付録-3 p.33 区分e「破断」（PDF p.303）；参考資料4「破断し、突出」（PDF p.510）"
+      - text: "bare steel rods at the corner of a beam where the outer layer has fallen off"
+        source: "参考資料2 写真（PDF p.405）"
+      - text: "bare steel rods with brown streaks running down below them"
+        source: "参考資料4「錆汁を伴う…鉄筋の著しい腐食」（PDF p.510）"
+    llm:
+      - "bare rusty metal rods"
+      - "orange-brown steel rods showing"
+      - "ribbed iron rods in a hole"
+      - "a grid of bare rods"
+      - "straight rusty rods lying bare along the edge of a beam"
+      - "thin metal rods poking out of a broken grey surface"
+      - "parallel steel rods coated in flaky orange rust"
+      - "a crossing mesh of metal rods inside a shallow hollow"
+      - "several long ribbed steel rods, dark orange with rust, visible where the outer layer has fallen away"
+      - "thin eaten-away metal rods with scaly brown surfaces, lying in a rough broken channel along the beam"
+      - "the snapped end of a steel rod sticking out of a broken area, with brown streaks running below it"
+      - "a row of evenly spaced metal rods showing through the underside of a slab, stained reddish brown"
+
+  corrosion_stain:
+    codebrim_tag: CorrosionStain
+    jp_term: "錆汁"
+    manual_ref: "要領中不是独立损伤类别：出现在付録-3 ⑧漏水・遊離石灰 的区分c/d/e（PDF p.304）；另见⑦中露出鉄筋の腐食（PDF p.303）；照片：参考資料4（PDF p.510, 513）"
+    label: "a corrosion stain"
+    term_literal: "rust juice"
+    attr:
+      - text: "orange-brown streaks bleeding downward from a point"
+        source: "参考資料4「錆汁を伴うひびわれ」写真（PDF p.510）"
+      - text: "a vertical trail of brown drip marks below a small opening"
+        source: "参考資料4 写真（PDF p.510）"
+      - text: "a reddish-brown discoloration on the grey surface"
+        source: "付録-3 p.34 区分e「錆汁の混入」（PDF p.304）"
+      - text: "dark orange tinted water marks"
+        source: "付録-3 p.34 区分e「漏水に…錆汁の混入」（PDF p.304）"
+      - text: "a smeared brownish film soaked into the surface"
+        source: "参考資料2 漏水・遊離石灰 写真2（PDF p.406）"
+      - text: "brown drips mixed with white chalky residue"
+        source: "付録-3 p.34 区分c/d「錆汁や遊離石灰」（PDF p.304）；参考資料4（PDF p.510）"
+      - text: "brown streaks following along a thin line on the surface"
+        source: "参考資料4「数多くの錆汁を伴うひびわれ」（PDF p.510）"
+      - text: "several brown runs spreading from a joint"
+        source: "参考資料2 写真（PDF p.406）；参考資料4 間詰め部の錆汁（PDF p.513）"
+      - text: "brown staining on the underside near the end of a beam"
+        source: "参考資料4 桁端部 写真（PDF p.510）"
+      - text: "brown liquid marks seeping out of a wet area"
+        source: "付録-3 p.34 区分e（PDF p.304）"
+    llm:
+      - "orange-brown drip marks"
+      - "reddish-brown streaks"
+      - "a brown blotchy discoloration"
+      - "dark orange water marks"
+      - "orange-brown streaks bleeding down the wall from a single point"
+      - "a reddish-brown smear soaked into the grey surface"
+      - "brown drip trails running below a small opening"
+      - "brown streaks following a thin dark line on the surface"
+      - "several orange-brown runs spreading downward from a joint, fading into the grey surface below"
+      - "a reddish-brown blot spreading outward like spilled tea, darker at the center and lighter at the edges"
+      - "brown liquid marks seeping from a damp patch, mixed with some white chalky residue"
+      - "dark orange-brown staining on the underside near the end of a beam, running in vertical trails"
+
+# ---- E2：程度表现（针对 ひびわれ；每组恰好 3 级：轻 → 中 → 重） ------------
+degree:
+  template: "a photo of a concrete surface with {}."
+  sets:
+    adjective:
+      levels:
+        - ["a slight crack", "a minor crack", "a small crack"]
+        - ["a moderate crack", "a medium crack", "a noticeable crack"]
+        - ["a severe crack", "a major crack", "a serious crack"]
+    width:
+      levels:
+        - ["a hairline crack", "a very fine crack", "a very thin crack"]
+        - ["a crack of medium width", "a moderately wide crack", "a clearly open crack"]
+        - ["a wide crack", "a very wide crack", "a wide open crack"]
+    extent:
+      levels:
+        - ["a single short crack", "one isolated crack", "a short crack line"]
+        - ["several cracks", "a few intersecting cracks", "multiple crack lines"]
+        - ["a dense network of cracks", "map cracking over the whole surface", "cracks in a grid pattern everywhere"]
+    manual:
+      # 付録-3 ⑥ひびわれ（PDF p.292-293）：损伤程度由"最大ひびわれ幅(大/中/小)"与"最小ひびわれ間隔(大/小)"组合决定。
+      source: "付録-3 ⑥ひびわれ pp.22-23（PDF p.292-293）。合并方式：b（幅小・間隔大）→0；c/d（幅小・間隔小，幅中・間隔大/小，幅大・間隔大）→1；e（幅大・間隔小）→2；a（損傷なし）不使用。mm 与 m 的绝对尺度改写为相对的视觉描述。"
+      levels:
+        - ["a few hairline cracks spaced far apart", "a single very thin crack", "sparse fine cracks with wide gaps between them"]
+        - ["thin cracks spaced close together", "a few clearly visible cracks of medium width", "several moderately open cracks"]
+        - ["many wide open cracks close together", "a dense pattern of wide cracks", "wide gaping cracks spaced tightly across the surface"]
+
+# ---- E0：额外统计的英语词（可选） -------------------------------------------
+extra_frequency_terms:
+  - crack
+  - hairline crack
+  - spalling
+  - spallation
+  - delamination
+  - efflorescence
+  - free lime
+  - water leakage
+  - exposed rebar
+  - exposed reinforcement
+  - rebar
+  - rust stain
+  - corrosion stain
+  - rust juice
+  - iron bar exposure

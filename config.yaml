@@ -1,0 +1,48 @@
+# ---------------------------------------------------------------------------
+# Preliminary experiment configuration. Change values here or on the command
+# line, e.g.  python e1_codebrim.py --set model.arch=ViT-B-16 run_name=vitb16_openai
+# ---------------------------------------------------------------------------
+run_name: vitl14_openai          # results go to results/<run_name>/
+
+model:
+  arch: ViT-L-14-quickgelu                 # main backbone; second run: ViT-B-16
+  pretrained: openai             # OpenAI CLIP weights (downloaded automatically)
+  device: auto                   # auto | cuda | cpu
+  precision: fp16                # fp16 on GPU, ignored on CPU
+
+image:
+  preprocess: letterbox          # letterbox (pad to square, nothing cut off) | center_crop
+
+data:
+  codebrim_root: data/codebrim   # folder that contains (somewhere below) metadata/defects.xml
+  codebrim_split: test           # final numbers on test; val only for smoke runs
+  deepcrack_root: data/deepcrack # folder that contains (somewhere below) test_img/
+  deepcrack_splits: [train, test]  # zero-shot: no training, so all 537 images are used for E2
+
+eval:
+  conditions: [label, term_literal, attr, label_attr, llm, label_llm, waffle]
+  n_prompts: 10                  # every condition gets exactly this many prompts per class
+  prompt_seed: 0
+  normal_sets: [basic, extended] # extended = normal prompts + hard negatives (stains, joints, ...)
+  logit_scale: 100               # CLIP's own temperature
+  bootstrap: 1000                # image-level bootstrap resamples for CIs
+  boot_seed: 0
+  vis_condition: label_attr      # condition used for the failure-case figures
+  n_vis: 6
+
+e3:
+  conditions: [label, term_literal, label_attr, label_llm, waffle]
+  crack_class: crack
+  splits: [train, test]
+  window_fracs: [0.5, 0.33]      # window side as a fraction of the shorter image side
+  stride_frac: 0.5
+  max_pixels_per_image: 2000     # random pixels per image used for pixel AUROC
+  bootstrap: 200
+  n_vis: 6
+
+runtime:
+  batch_size: 64
+  num_workers: 2
+
+paths:
+  results_dir: results

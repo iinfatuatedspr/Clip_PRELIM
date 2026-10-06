@@ -1,0 +1,116 @@
+{
+  "updated": "2026-09-29T12:06:36",
+  "python": "3.13.12",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "torch": "2.14.0+cu130",
+  "open_clip": "3.3.0",
+  "gpu": "NVIDIA GeForce RTX 4060 Ti",
+  "config": {
+    "run_name": "vitb16_openai",
+    "model": {
+      "arch": "ViT-B-16-quickgelu",
+      "pretrained": "openai",
+      "device": "auto",
+      "precision": "fp16"
+    },
+    "image": {
+      "preprocess": "letterbox"
+    },
+    "data": {
+      "codebrim_root": "data/codebrim",
+      "codebrim_split": "test",
+      "deepcrack_root": "data/deepcrack",
+      "deepcrack_splits": [
+        "train",
+        "test"
+      ]
+    },
+    "eval": {
+      "conditions": [
+        "label",
+        "term_literal",
+        "attr",
+        "label_attr",
+        "llm",
+        "label_llm",
+        "waffle"
+      ],
+      "n_prompts": 10,
+      "prompt_seed": 0,
+      "normal_sets": [
+        "basic",
+        "extended"
+      ],
+      "logit_scale": 100,
+      "bootstrap": 1000,
+      "boot_seed": 0,
+      "vis_condition": "label_attr",
+      "n_vis": 6
+    },
+    "e3": {
+      "conditions": [
+        "label",
+        "term_literal",
+        "label_attr",
+        "label_llm",
+        "waffle"
+      ],
+      "crack_class": "crack",
+      "splits": [
+        "train",
+        "test"
+      ],
+      "window_fracs": [
+        0.5,
+        0.33
+      ],
+      "stride_frac": 0.5,
+      "max_pixels_per_image": 2000,
+      "bootstrap": 200,
+      "n_vis": 6
+    },
+    "runtime": {
+      "batch_size": 64,
+      "num_workers": 2
+    },
+    "paths": {
+      "results_dir": "results"
+    }
+  },
+  "prompts_sha256": "87e97227b686da6c8d54af0ad950d244f1bcb39a281e7fffd6940b6229109b55",
+  "experiments": {
+    "E1": {
+      "split": "test",
+      "n_images": 632,
+      "conditions": [
+        "label",
+        "term_literal",
+        "attr",
+        "label_attr",
+        "llm",
+        "label_llm",
+        "waffle"
+      ]
+    },
+    "E2": {
+      "n_images": 537,
+      "sets": [
+        "adjective",
+        "width",
+        "extent",
+        "manual",
+        "random_control"
+      ]
+    },
+    "E3": {
+      "n_images": 537,
+      "conditions": [
+        "label",
+        "term_literal",
+        "label_attr",
+        "label_llm",
+        "waffle"
+      ]
+    }
+  }
+}

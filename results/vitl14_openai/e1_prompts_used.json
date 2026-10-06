@@ -1,0 +1,493 @@
+{
+  "conditions": {
+    "label": {
+      "crack": [
+        "a photo of a crack on a concrete surface.",
+        "a close-up photo of a crack on concrete.",
+        "an inspection photo of a crack on a concrete bridge.",
+        "a photo of a crack on a concrete wall.",
+        "a cropped photo of a crack on a concrete structure.",
+        "a bright photo of a crack on concrete.",
+        "a dark photo of a crack on concrete.",
+        "a blurry photo of a crack on concrete.",
+        "a photo showing a crack on the underside of a concrete bridge.",
+        "a detailed photo of a crack on a concrete surface."
+      ],
+      "spallation": [
+        "a photo of spalling on a concrete surface.",
+        "a close-up photo of spalling on concrete.",
+        "an inspection photo of spalling on a concrete bridge.",
+        "a photo of spalling on a concrete wall.",
+        "a cropped photo of spalling on a concrete structure.",
+        "a bright photo of spalling on concrete.",
+        "a dark photo of spalling on concrete.",
+        "a blurry photo of spalling on concrete.",
+        "a photo showing spalling on the underside of a concrete bridge.",
+        "a detailed photo of spalling on a concrete surface."
+      ],
+      "efflorescence": [
+        "a photo of efflorescence on a concrete surface.",
+        "a close-up photo of efflorescence on concrete.",
+        "an inspection photo of efflorescence on a concrete bridge.",
+        "a photo of efflorescence on a concrete wall.",
+        "a cropped photo of efflorescence on a concrete structure.",
+        "a bright photo of efflorescence on concrete.",
+        "a dark photo of efflorescence on concrete.",
+        "a blurry photo of efflorescence on concrete.",
+        "a photo showing efflorescence on the underside of a concrete bridge.",
+        "a detailed photo of efflorescence on a concrete surface."
+      ],
+      "exposed_bars": [
+        "a photo of exposed reinforcement bars on a concrete surface.",
+        "a close-up photo of exposed reinforcement bars on concrete.",
+        "an inspection photo of exposed reinforcement bars on a concrete bridge.",
+        "a photo of exposed reinforcement bars on a concrete wall.",
+        "a cropped photo of exposed reinforcement bars on a concrete structure.",
+        "a bright photo of exposed reinforcement bars on concrete.",
+        "a dark photo of exposed reinforcement bars on concrete.",
+        "a blurry photo of exposed reinforcement bars on concrete.",
+        "a photo showing exposed reinforcement bars on the underside of a concrete bridge.",
+        "a detailed photo of exposed reinforcement bars on a concrete surface."
+      ],
+      "corrosion_stain": [
+        "a photo of a corrosion stain on a concrete surface.",
+        "a close-up photo of a corrosion stain on concrete.",
+        "an inspection photo of a corrosion stain on a concrete bridge.",
+        "a photo of a corrosion stain on a concrete wall.",
+        "a cropped photo of a corrosion stain on a concrete structure.",
+        "a bright photo of a corrosion stain on concrete.",
+        "a dark photo of a corrosion stain on concrete.",
+        "a blurry photo of a corrosion stain on concrete.",
+        "a photo showing a corrosion stain on the underside of a concrete bridge.",
+        "a detailed photo of a corrosion stain on a concrete surface."
+      ]
+    },
+    "term_literal": {
+      "crack": [
+        "a photo of cracking on a concrete surface.",
+        "a close-up photo of cracking on concrete.",
+        "an inspection photo of cracking on a concrete bridge.",
+        "a photo of cracking on a concrete wall.",
+        "a cropped photo of cracking on a concrete structure.",
+        "a bright photo of cracking on concrete.",
+        "a dark photo of cracking on concrete.",
+        "a blurry photo of cracking on concrete.",
+        "a photo showing cracking on the underside of a concrete bridge.",
+        "a detailed photo of cracking on a concrete surface."
+      ],
+      "spallation": [
+        "a photo of peeling on a concrete surface.",
+        "a close-up photo of peeling on concrete.",
+        "an inspection photo of peeling on a concrete bridge.",
+        "a photo of peeling on a concrete wall.",
+        "a cropped photo of peeling on a concrete structure.",
+        "a bright photo of peeling on concrete.",
+        "a dark photo of peeling on concrete.",
+        "a blurry photo of peeling on concrete.",
+        "a photo showing peeling on the underside of a concrete bridge.",
+        "a detailed photo of peeling on a concrete surface."
+      ],
+      "efflorescence": [
+        "a photo of free lime on a concrete surface.",
+        "a close-up photo of free lime on concrete.",
+        "an inspection photo of free lime on a concrete bridge.",
+        "a photo of free lime on a concrete wall.",
+        "a cropped photo of free lime on a concrete structure.",
+        "a bright photo of free lime on concrete.",
+        "a dark photo of free lime on concrete.",
+        "a blurry photo of free lime on concrete.",
+        "a photo showing free lime on the underside of a concrete bridge.",
+        "a detailed photo of free lime on a concrete surface."
+      ],
+      "exposed_bars": [
+        "a photo of iron bar exposure on a concrete surface.",
+        "a close-up photo of iron bar exposure on concrete.",
+        "an inspection photo of iron bar exposure on a concrete bridge.",
+        "a photo of iron bar exposure on a concrete wall.",
+        "a cropped photo of iron bar exposure on a concrete structure.",
+        "a bright photo of iron bar exposure on concrete.",
+        "a dark photo of iron bar exposure on concrete.",
+        "a blurry photo of iron bar exposure on concrete.",
+        "a photo showing iron bar exposure on the underside of a concrete bridge.",
+        "a detailed photo of iron bar exposure on a concrete surface."
+      ],
+      "corrosion_stain": [
+        "a photo of rust juice on a concrete surface.",
+        "a close-up photo of rust juice on concrete.",
+        "an inspection photo of rust juice on a concrete bridge.",
+        "a photo of rust juice on a concrete wall.",
+        "a cropped photo of rust juice on a concrete structure.",
+        "a bright photo of rust juice on concrete.",
+        "a dark photo of rust juice on concrete.",
+        "a blurry photo of rust juice on concrete.",
+        "a photo showing rust juice on the underside of a concrete bridge.",
+        "a detailed photo of rust juice on a concrete surface."
+      ]
+    },
+    "attr": {
+      "crack": [
+        "a photo of a concrete surface with a thin dark line running straight across the surface.",
+        "a photo of a concrete surface with a thin jagged line that wanders irregularly.",
+        "a photo of a concrete surface with a fine black line contrasting with the pale grey surface.",
+        "a photo of a concrete surface with a dark hairline mark that stands out against the lighter background.",
+        "a photo of a concrete surface with a narrow sharp-edged opening that splits the surface into two parts.",
+        "a photo of a concrete surface with a slightly open line with crumbled edges.",
+        "a photo of a concrete surface with a web of thin lines forming irregular polygons like a turtle shell.",
+        "a photo of a concrete surface with several parallel vertical lines at regular intervals.",
+        "a photo of a concrete surface with thin lines running diagonally at about 45 degrees.",
+        "a photo of a concrete surface with thin lines spreading in many directions over a pillar."
+      ],
+      "spallation": [
+        "a photo of a concrete surface with a shallow hollow where the surface layer has broken away.",
+        "a photo of a concrete surface with a missing chunk along the corner edge of a beam.",
+        "a photo of a concrete surface with a freshly exposed patch of a different tone from the weathered surface around it.",
+        "a photo of a concrete surface with a paler rough area surrounded by darker, older surface.",
+        "a photo of a concrete surface with a rough pitted area exposing coarse stones and gravel.",
+        "a photo of a concrete surface with a crumbling area with loose fragments at its rim.",
+        "a photo of a concrete surface with an irregular broken area with sharp uneven edges.",
+        "a photo of a concrete surface with a long strip of broken surface running along an edge.",
+        "a photo of a concrete surface with a broken-away area on the underside of a slab or beam.",
+        "a photo of a concrete surface with a broken-away area next to a thin line on the surface."
+      ],
+      "efflorescence": [
+        "a photo of a concrete surface with white streaks running downward from a joint.",
+        "a photo of a concrete surface with small white icicle-like drips hanging from the underside.",
+        "a photo of a concrete surface with chalky white deposits on the grey surface.",
+        "a photo of a concrete surface with a muddy off-white residue mixed with water marks.",
+        "a photo of a concrete surface with a crusty powdery white coating.",
+        "a photo of a concrete surface with a damp glossy film with white residue at its edges.",
+        "a photo of a concrete surface with white lines tracing the seams between slabs.",
+        "a photo of a concrete surface with white residue spreading out along a thin line on the surface.",
+        "a photo of a concrete surface with white deposits on the underside of a deck slab.",
+        "a photo of a concrete surface with damp dark patches with white residue seeping out."
+      ],
+      "exposed_bars": [
+        "a photo of a concrete surface with long thin metal rods visible inside a broken-away area.",
+        "a photo of a concrete surface with straight parallel rods lying bare along the bottom edge of a beam.",
+        "a photo of a concrete surface with reddish-brown rusty rods set in grey surroundings.",
+        "a photo of a concrete surface with a dark orange rust coating on bare steel rods.",
+        "a photo of a concrete surface with ribbed steel rods with flaky scale on their surface.",
+        "a photo of a concrete surface with thinned eaten-away steel rods with a scaly surface.",
+        "a photo of a concrete surface with a grid of crossing steel rods showing through a hollow.",
+        "a photo of a concrete surface with a snapped steel rod end sticking out of the surface.",
+        "a photo of a concrete surface with bare steel rods at the corner of a beam where the outer layer has fallen off.",
+        "a photo of a concrete surface with bare steel rods with brown streaks running down below them."
+      ],
+      "corrosion_stain": [
+        "a photo of a concrete surface with orange-brown streaks bleeding downward from a point.",
+        "a photo of a concrete surface with a vertical trail of brown drip marks below a small opening.",
+        "a photo of a concrete surface with a reddish-brown discoloration on the grey surface.",
+        "a photo of a concrete surface with dark orange tinted water marks.",
+        "a photo of a concrete surface with a smeared brownish film soaked into the surface.",
+        "a photo of a concrete surface with brown drips mixed with white chalky residue.",
+        "a photo of a concrete surface with brown streaks following along a thin line on the surface.",
+        "a photo of a concrete surface with several brown runs spreading from a joint.",
+        "a photo of a concrete surface with brown staining on the underside near the end of a beam.",
+        "a photo of a concrete surface with brown liquid marks seeping out of a wet area."
+      ]
+    },
+    "label_attr": {
+      "crack": [
+        "a photo of a crack on a concrete surface, which has a thin dark line running straight across the surface.",
+        "a photo of a crack on a concrete surface, which has a thin jagged line that wanders irregularly.",
+        "a photo of a crack on a concrete surface, which has a fine black line contrasting with the pale grey surface.",
+        "a photo of a crack on a concrete surface, which has a dark hairline mark that stands out against the lighter background.",
+        "a photo of a crack on a concrete surface, which has a narrow sharp-edged opening that splits the surface into two parts.",
+        "a photo of a crack on a concrete surface, which has a slightly open line with crumbled edges.",
+        "a photo of a crack on a concrete surface, which has a web of thin lines forming irregular polygons like a turtle shell.",
+        "a photo of a crack on a concrete surface, which has several parallel vertical lines at regular intervals.",
+        "a photo of a crack on a concrete surface, which has thin lines running diagonally at about 45 degrees.",
+        "a photo of a crack on a concrete surface, which has thin lines spreading in many directions over a pillar."
+      ],
+      "spallation": [
+        "a photo of spalling on a concrete surface, which has a shallow hollow where the surface layer has broken away.",
+        "a photo of spalling on a concrete surface, which has a missing chunk along the corner edge of a beam.",
+        "a photo of spalling on a concrete surface, which has a freshly exposed patch of a different tone from the weathered surface around it.",
+        "a photo of spalling on a concrete surface, which has a paler rough area surrounded by darker, older surface.",
+        "a photo of spalling on a concrete surface, which has a rough pitted area exposing coarse stones and gravel.",
+        "a photo of spalling on a concrete surface, which has a crumbling area with loose fragments at its rim.",
+        "a photo of spalling on a concrete surface, which has an irregular broken area with sharp uneven edges.",
+        "a photo of spalling on a concrete surface, which has a long strip of broken surface running along an edge.",
+        "a photo of spalling on a concrete surface, which has a broken-away area on the underside of a slab or beam.",
+        "a photo of spalling on a concrete surface, which has a broken-away area next to a thin line on the surface."
+      ],
+      "efflorescence": [
+        "a photo of efflorescence on a concrete surface, which has white streaks running downward from a joint.",
+        "a photo of efflorescence on a concrete surface, which has small white icicle-like drips hanging from the underside.",
+        "a photo of efflorescence on a concrete surface, which has chalky white deposits on the grey surface.",
+        "a photo of efflorescence on a concrete surface, which has a muddy off-white residue mixed with water marks.",
+        "a photo of efflorescence on a concrete surface, which has a crusty powdery white coating.",
+        "a photo of efflorescence on a concrete surface, which has a damp glossy film with white residue at its edges.",
+        "a photo of efflorescence on a concrete surface, which has white lines tracing the seams between slabs.",
+        "a photo of efflorescence on a concrete surface, which has white residue spreading out along a thin line on the surface.",
+        "a photo of efflorescence on a concrete surface, which has white deposits on the underside of a deck slab.",
+        "a photo of efflorescence on a concrete surface, which has damp dark patches with white residue seeping out."
+      ],
+      "exposed_bars": [
+        "a photo of exposed reinforcement bars on a concrete surface, which has long thin metal rods visible inside a broken-away area.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has straight parallel rods lying bare along the bottom edge of a beam.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has reddish-brown rusty rods set in grey surroundings.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has a dark orange rust coating on bare steel rods.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has ribbed steel rods with flaky scale on their surface.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has thinned eaten-away steel rods with a scaly surface.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has a grid of crossing steel rods showing through a hollow.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has a snapped steel rod end sticking out of the surface.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has bare steel rods at the corner of a beam where the outer layer has fallen off.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has bare steel rods with brown streaks running down below them."
+      ],
+      "corrosion_stain": [
+        "a photo of a corrosion stain on a concrete surface, which has orange-brown streaks bleeding downward from a point.",
+        "a photo of a corrosion stain on a concrete surface, which has a vertical trail of brown drip marks below a small opening.",
+        "a photo of a corrosion stain on a concrete surface, which has a reddish-brown discoloration on the grey surface.",
+        "a photo of a corrosion stain on a concrete surface, which has dark orange tinted water marks.",
+        "a photo of a corrosion stain on a concrete surface, which has a smeared brownish film soaked into the surface.",
+        "a photo of a corrosion stain on a concrete surface, which has brown drips mixed with white chalky residue.",
+        "a photo of a corrosion stain on a concrete surface, which has brown streaks following along a thin line on the surface.",
+        "a photo of a corrosion stain on a concrete surface, which has several brown runs spreading from a joint.",
+        "a photo of a corrosion stain on a concrete surface, which has brown staining on the underside near the end of a beam.",
+        "a photo of a corrosion stain on a concrete surface, which has brown liquid marks seeping out of a wet area."
+      ]
+    },
+    "llm": {
+      "crack": [
+        "a photo of a concrete surface with a thin dark line.",
+        "a photo of a concrete surface with a zigzag dark hairline.",
+        "a photo of a concrete surface with a web of fine lines.",
+        "a photo of a concrete surface with a narrow black split.",
+        "a photo of a concrete surface with a long thin dark line running straight down the wall.",
+        "a photo of a concrete surface with a narrow gap separating the surface into two uneven halves.",
+        "a photo of a concrete surface with a network of thin dark lines forming irregular polygons, like the pattern on a turtle shell.",
+        "a photo of a concrete surface with a slightly open dark line that runs diagonally across the grey surface at a sharp angle.",
+        "a photo of a concrete surface with thin wavy lines spreading in several directions from one spot, with a little dirt settled inside.",
+        "a photo of a concrete surface with a sharp narrow dark gap running along the underside of a beam from one side to the other."
+      ],
+      "spallation": [
+        "a photo of a concrete surface with a shallow broken hollow.",
+        "a photo of a concrete surface with a chipped-away rough patch.",
+        "a photo of a concrete surface with a missing piece of surface.",
+        "a photo of a concrete surface with a jagged shallow crater.",
+        "a photo of a concrete surface with a rough dented area where the outer layer fell off.",
+        "a photo of a concrete surface with an uneven hole showing small stones and gravel inside.",
+        "a photo of a concrete surface with a pale rough scar surrounded by darker weathered surface.",
+        "a photo of a concrete surface with a long strip along the bottom edge of a beam where chunks have broken away.",
+        "a photo of a concrete surface with an irregular dented patch on the underside of a slab, rougher and lighter than its surroundings.",
+        "a photo of a concrete surface with a broken-away area next to a thin dark line, with loose fragments still hanging at its rim."
+      ],
+      "efflorescence": [
+        "a photo of a concrete surface with white chalky streaks.",
+        "a photo of a concrete surface with a crusty white residue.",
+        "a photo of a concrete surface with white icicle-like drips.",
+        "a photo of a concrete surface with white powdery stains.",
+        "a photo of a concrete surface with a chalky white crust spreading along a thin line.",
+        "a photo of a concrete surface with damp dark patches edged with a white powdery residue.",
+        "a photo of a concrete surface with white lines tracing the seams between slabs on the underside.",
+        "a photo of a concrete surface with small white stalactite-like drips hanging from the underside of a slab where water has seeped through.",
+        "a photo of a concrete surface with a crusty yellowish-white layer mixed with muddy water marks, spreading downward from a gap.",
+        "a photo of a concrete surface with a wet glossy area with white residue oozing out of a narrow line and collecting at its edges."
+      ],
+      "exposed_bars": [
+        "a photo of a concrete surface with orange-brown steel rods showing.",
+        "a photo of a concrete surface with ribbed iron rods in a hole.",
+        "a photo of a concrete surface with a grid of bare rods.",
+        "a photo of a concrete surface with straight rusty rods lying bare along the edge of a beam.",
+        "a photo of a concrete surface with thin metal rods poking out of a broken grey surface.",
+        "a photo of a concrete surface with parallel steel rods coated in flaky orange rust.",
+        "a photo of a concrete surface with a crossing mesh of metal rods inside a shallow hollow.",
+        "a photo of a concrete surface with several long ribbed steel rods, dark orange with rust, visible where the outer layer has fallen away.",
+        "a photo of a concrete surface with thin eaten-away metal rods with scaly brown surfaces, lying in a rough broken channel along the beam.",
+        "a photo of a concrete surface with a row of evenly spaced metal rods showing through the underside of a slab, stained reddish brown."
+      ],
+      "corrosion_stain": [
+        "a photo of a concrete surface with orange-brown drip marks.",
+        "a photo of a concrete surface with a brown blotchy discoloration.",
+        "a photo of a concrete surface with dark orange water marks.",
+        "a photo of a concrete surface with orange-brown streaks bleeding down the wall from a single point.",
+        "a photo of a concrete surface with a reddish-brown smear soaked into the grey surface.",
+        "a photo of a concrete surface with brown streaks following a thin dark line on the surface.",
+        "a photo of a concrete surface with several orange-brown runs spreading downward from a joint, fading into the grey surface below.",
+        "a photo of a concrete surface with a reddish-brown blot spreading outward like spilled tea, darker at the center and lighter at the edges.",
+        "a photo of a concrete surface with brown liquid marks seeping from a damp patch, mixed with some white chalky residue.",
+        "a photo of a concrete surface with dark orange-brown staining on the underside near the end of a beam, running in vertical trails."
+      ]
+    },
+    "label_llm": {
+      "crack": [
+        "a photo of a crack on a concrete surface, which has a thin dark line.",
+        "a photo of a crack on a concrete surface, which has a zigzag dark hairline.",
+        "a photo of a crack on a concrete surface, which has a web of fine lines.",
+        "a photo of a crack on a concrete surface, which has a narrow black split.",
+        "a photo of a crack on a concrete surface, which has a long thin dark line running straight down the wall.",
+        "a photo of a crack on a concrete surface, which has fine lines branching out like the veins of a leaf.",
+        "a photo of a crack on a concrete surface, which has several thin parallel lines spaced evenly across the grey surface.",
+        "a photo of a crack on a concrete surface, which has a slightly open dark line that runs diagonally across the grey surface at a sharp angle.",
+        "a photo of a crack on a concrete surface, which has thin wavy lines spreading in several directions from one spot, with a little dirt settled inside.",
+        "a photo of a crack on a concrete surface, which has a sharp narrow dark gap running along the underside of a beam from one side to the other."
+      ],
+      "spallation": [
+        "a photo of spalling on a concrete surface, which has a shallow broken hollow.",
+        "a photo of spalling on a concrete surface, which has a chipped-away rough patch.",
+        "a photo of spalling on a concrete surface, which has a missing piece of surface.",
+        "a photo of spalling on a concrete surface, which has a jagged shallow crater.",
+        "a photo of spalling on a concrete surface, which has a rough dented area where the outer layer fell off.",
+        "a photo of spalling on a concrete surface, which has an uneven hole showing small stones and gravel inside.",
+        "a photo of spalling on a concrete surface, which has a wide shallow pit with crumbly edges, exposing coarse grey stones beneath the smooth outer skin.",
+        "a photo of spalling on a concrete surface, which has a long strip along the bottom edge of a beam where chunks have broken away.",
+        "a photo of spalling on a concrete surface, which has an irregular dented patch on the underside of a slab, rougher and lighter than its surroundings.",
+        "a photo of spalling on a concrete surface, which has a broken-away area next to a thin dark line, with loose fragments still hanging at its rim."
+      ],
+      "efflorescence": [
+        "a photo of efflorescence on a concrete surface, which has white chalky streaks.",
+        "a photo of efflorescence on a concrete surface, which has white icicle-like drips.",
+        "a photo of efflorescence on a concrete surface, which has white powdery stains.",
+        "a photo of efflorescence on a concrete surface, which has white streaks running down from a joint like dripping wax.",
+        "a photo of efflorescence on a concrete surface, which has a chalky white crust spreading along a thin line.",
+        "a photo of efflorescence on a concrete surface, which has damp dark patches edged with a white powdery residue.",
+        "a photo of efflorescence on a concrete surface, which has white lines tracing the seams between slabs on the underside.",
+        "a photo of efflorescence on a concrete surface, which has small white stalactite-like drips hanging from the underside of a slab where water has seeped through.",
+        "a photo of efflorescence on a concrete surface, which has a crusty yellowish-white layer mixed with muddy water marks, spreading downward from a gap.",
+        "a photo of efflorescence on a concrete surface, which has a wet glossy area with white residue oozing out of a narrow line and collecting at its edges."
+      ],
+      "exposed_bars": [
+        "a photo of exposed reinforcement bars on a concrete surface, which has bare rusty metal rods.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has orange-brown steel rods showing.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has ribbed iron rods in a hole.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has a grid of bare rods.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has straight rusty rods lying bare along the edge of a beam.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has thin metal rods poking out of a broken grey surface.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has a crossing mesh of metal rods inside a shallow hollow.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has thin eaten-away metal rods with scaly brown surfaces, lying in a rough broken channel along the beam.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has the snapped end of a steel rod sticking out of a broken area, with brown streaks running below it.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has a row of evenly spaced metal rods showing through the underside of a slab, stained reddish brown."
+      ],
+      "corrosion_stain": [
+        "a photo of a corrosion stain on a concrete surface, which has reddish-brown streaks.",
+        "a photo of a corrosion stain on a concrete surface, which has a brown blotchy discoloration.",
+        "a photo of a corrosion stain on a concrete surface, which has dark orange water marks.",
+        "a photo of a corrosion stain on a concrete surface, which has orange-brown streaks bleeding down the wall from a single point.",
+        "a photo of a corrosion stain on a concrete surface, which has a reddish-brown smear soaked into the grey surface.",
+        "a photo of a corrosion stain on a concrete surface, which has brown drip trails running below a small opening.",
+        "a photo of a corrosion stain on a concrete surface, which has several orange-brown runs spreading downward from a joint, fading into the grey surface below.",
+        "a photo of a corrosion stain on a concrete surface, which has a reddish-brown blot spreading outward like spilled tea, darker at the center and lighter at the edges.",
+        "a photo of a corrosion stain on a concrete surface, which has brown liquid marks seeping from a damp patch, mixed with some white chalky residue.",
+        "a photo of a corrosion stain on a concrete surface, which has dark orange-brown staining on the underside near the end of a beam, running in vertical trails."
+      ]
+    },
+    "waffle": {
+      "crack": [
+        "a photo of a crack on a concrete surface, which has wound and yield.",
+        "a photo of a crack on a concrete surface, which has dnzjx jvfmi.",
+        "a photo of a crack on a concrete surface, which has ales and lian.",
+        "a photo of a crack on a concrete surface, which has dyzgl orldy.",
+        "a photo of a crack on a concrete surface, which has missile and site.",
+        "a photo of a crack on a concrete surface, which has tepna ysiac.",
+        "a photo of a crack on a concrete surface, which has locally and jordan.",
+        "a photo of a crack on a concrete surface, which has xygbm vqbqi.",
+        "a photo of a crack on a concrete surface, which has zero and dging.",
+        "a photo of a crack on a concrete surface, which has zdotg hgfxf."
+      ],
+      "spallation": [
+        "a photo of spalling on a concrete surface, which has golden and stress.",
+        "a photo of spalling on a concrete surface, which has uhupw otvbo.",
+        "a photo of spalling on a concrete surface, which has nobody and indeed.",
+        "a photo of spalling on a concrete surface, which has kmvvq syqjc.",
+        "a photo of spalling on a concrete surface, which has moor and fuel.",
+        "a photo of spalling on a concrete surface, which has awydv kbxyb.",
+        "a photo of spalling on a concrete surface, which has gratitude and usic.",
+        "a photo of spalling on a concrete surface, which has kwvca cjccg.",
+        "a photo of spalling on a concrete surface, which has admission and urgent.",
+        "a photo of spalling on a concrete surface, which has ysqyu dawkb."
+      ],
+      "efflorescence": [
+        "a photo of efflorescence on a concrete surface, which has buzz and farming.",
+        "a photo of efflorescence on a concrete surface, which has limmz suaiz.",
+        "a photo of efflorescence on a concrete surface, which has physical and choices.",
+        "a photo of efflorescence on a concrete surface, which has qwenq iozti.",
+        "a photo of efflorescence on a concrete surface, which has rally and beer.",
+        "a photo of efflorescence on a concrete surface, which has whvhr nyoyz.",
+        "a photo of efflorescence on a concrete surface, which has gothic and denmark.",
+        "a photo of efflorescence on a concrete surface, which has zgodc rbsve.",
+        "a photo of efflorescence on a concrete surface, which has loans and drake.",
+        "a photo of efflorescence on a concrete surface, which has xposp tfunt."
+      ],
+      "exposed_bars": [
+        "a photo of exposed reinforcement bars on a concrete surface, which has powered and sland.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has nzaol aoutz.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has comm and cope.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has iuejr pfrpx.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has stamp and tapes.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has cbnmo tierk.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has tridge and shirt.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has shcik zwgmp.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has bingo and shoes.",
+        "a photo of exposed reinforcement bars on a concrete surface, which has yxhdp bdbfw."
+      ],
+      "corrosion_stain": [
+        "a photo of a corrosion stain on a concrete surface, which has voter and python.",
+        "a photo of a corrosion stain on a concrete surface, which has mbegr jicsa.",
+        "a photo of a corrosion stain on a concrete surface, which has shaped and upside.",
+        "a photo of a corrosion stain on a concrete surface, which has rufcb pgftv.",
+        "a photo of a corrosion stain on a concrete surface, which has inal and searching.",
+        "a photo of a corrosion stain on a concrete surface, which has znegz buqmv.",
+        "a photo of a corrosion stain on a concrete surface, which has wembley and guilty.",
+        "a photo of a corrosion stain on a concrete surface, which has trmxw bovcj.",
+        "a photo of a corrosion stain on a concrete surface, which has trials and aire.",
+        "a photo of a corrosion stain on a concrete surface, which has zjudm akawz."
+      ]
+    }
+  },
+  "normal": {
+    "basic": {
+      "plain": [
+        "a photo of a clean concrete surface.",
+        "a photo of an intact concrete wall.",
+        "a photo of smooth concrete.",
+        "a close-up photo of sound concrete.",
+        "a photo of plain grey concrete.",
+        "a photo of concrete in good condition.",
+        "a photo of a uniform concrete texture.",
+        "a photo of a well-maintained concrete structure.",
+        "a photo of a normal concrete bridge surface.",
+        "a photo of a solid concrete slab."
+      ]
+    },
+    "extended": {
+      "plain": [
+        "a photo of a clean concrete surface.",
+        "a photo of an intact concrete wall.",
+        "a photo of smooth concrete.",
+        "a close-up photo of sound concrete.",
+        "a photo of plain grey concrete.",
+        "a photo of concrete in good condition.",
+        "a photo of a uniform concrete texture.",
+        "a photo of a well-maintained concrete structure.",
+        "a photo of a normal concrete bridge surface.",
+        "a photo of a solid concrete slab."
+      ],
+      "dirt_stain": [
+        "a photo of a concrete surface with dark dirt stains.",
+        "a photo of a concrete surface with dust and grime.",
+        "a photo of a concrete surface with patchy dirt marks."
+      ],
+      "formwork_joint": [
+        "a photo of a concrete surface with straight formwork joint lines.",
+        "a photo of a concrete surface with round form tie holes.",
+        "a photo of a concrete surface with a construction joint."
+      ],
+      "shadow": [
+        "a photo of a concrete surface with a dark shadow.",
+        "a photo of a concrete surface with shadows of a railing.",
+        "a photo of a concrete surface in partial shade."
+      ],
+      "surface_pores": [
+        "a photo of a concrete surface with small air bubble holes.",
+        "a photo of a concrete surface with a rough porous texture.",
+        "a photo of a concrete surface with tiny surface voids."
+      ],
+      "paint_marking": [
+        "a photo of a concrete surface with painted inspection markings.",
+        "a photo of a concrete surface with graffiti.",
+        "a photo of a concrete surface with chalk lines."
+      ]
+    }
+  }
+}
